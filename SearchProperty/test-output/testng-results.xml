@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42796" started-at="2018-04-27T22:46:45Z" finished-at="2018-04-27T22:47:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42796" started-at="2018-04-27T22:46:45Z" finished-at="2018-04-27T22:47:28Z">
+      <class name="com.rightmove.searchproperty.tests.SearchPropertyTest">
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="41247" started-at="2018-04-27T23:46:46Z" data-provider="getData" finished-at="2018-04-27T23:47:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{SaleOrRent=ForSale, ExpResults=, MinPrice=90,000, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="970" started-at="2018-04-27T23:47:27Z" finished-at="2018-04-27T23:47:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-27T23:47:28Z" finished-at="2018-04-27T23:47:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.rightmove.searchproperty.tests.SearchPropertyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
