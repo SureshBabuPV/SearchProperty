@@ -19,10 +19,6 @@ import com.rightmove.searchproperty.pages.HomePage;
 import com.rightmove.searchproperty.pages.SearchPage;
 import com.rightmove.searchproperty.pages.SearchResultsPage;
 
-/**
- * @author sbabu
- *
- */
 public class SearchPropertyTest extends BaseTest {
 	HomePage homePage;
 	SearchPage searchPage;
@@ -49,8 +45,11 @@ public class SearchPropertyTest extends BaseTest {
 
 		homePage.searchPropertySaleOrRent(testData.get("SearchLocation"),
 				testData.get("SaleOrRent"));
+		
 		// when expecting home page location search results
 		if (testData.get("ExpHomeSearchResults").equalsIgnoreCase("Yes")) {
+			searchPage.verifyHeaderTitle(testData.get("SearchLocation"),
+				testData.get("SaleOrRent"));
 			if (searchPage.is_SearchPage()) {
 				searchPage.findProperty(testData.get("SearchRadius"),
 						testData.get("MinPrice"), testData.get("MaxPrice"),
@@ -60,7 +59,10 @@ public class SearchPropertyTest extends BaseTest {
 				// when expecting property search results
 				if (testData.get("ExpSearchResults")
 						.equalsIgnoreCase("Yes")) {
+					searchResultsPage.verifySearchTitle(testData.get("SearchLocation"),
+							testData.get("SaleOrRent"));
 					if (searchResultsPage.is_SearchResultsPage()) {
+						searchResultsPage.select_SortType(testData.get("SortBy"));
 						testLog.log(
 								LogStatus.INFO,
 								"Details of non - featured Property: "
@@ -93,7 +95,7 @@ public class SearchPropertyTest extends BaseTest {
 					}
 				}
 			} else {
-				testLog.log(LogStatus.ERROR, "*****Home Page error message :"
+				testLog.log(LogStatus.ERROR, "Home Page error message :"
 						+ homePage.getErrorMessage());
 				testLog.log(LogStatus.FAIL,
 						" Expecting Home Page location search successfull but no results displayed.");
@@ -116,34 +118,7 @@ public class SearchPropertyTest extends BaseTest {
 			}
 		}
 
-		/*
-		 * loginpage .login_User(testData.get("UserName"),
-		 * testData.get("Password")); //Checking login is successful and it
-		 * matches with expected if
-		 * (testData.get("LoginStatus").equals("LoginSuccessful")) {
-		 * 
-		 * if (!(homepage.is_HomePage())) { softAssertion.assertTrue( false,
-		 * "\n Login is UnSuccessful for user :" + testData.get("UserName") +
-		 * " ; Expecting Successful login"); testLog.log( LogStatus.FAIL,
-		 * "\n Login is UnSuccessful for user :" + testData.get("UserName") +
-		 * " ; Expecting Successful login"); } else { testLog.log(
-		 * LogStatus.PASS, "\n Login is Successful for user : " +
-		 * testData.get("UserName")); homepage.user_SignOut(); //Checking logout
-		 * is successful if (!(loginpage.is_LoginPage())) {
-		 * softAssertion.assertTrue( false,
-		 * "\n Logout is UnSuccessful for user : " + testData.get("UserName") +
-		 * " ; Expecting to logout"); testLog.log( LogStatus.FAIL,
-		 * "\n Logout is UnSuccessful for user : " + testData.get("UserName") +
-		 * " ; Expecting to logout"); } else { testLog.log( LogStatus.FAIL,
-		 * "\n Logout is Successful for user : " + testData.get("UserName")); }
-		 * 
-		 * } } else if (testData.get("LoginStatus").equals("LoginUnSuccessful"))
-		 * { if (homepage.is_HomePage()) { softAssertion.assertTrue( false,
-		 * "\n Login is Successful for user : " + testData.get("UserName") +
-		 * " ; Expecting login Error"); testLog.log( LogStatus.FAIL,
-		 * "\n Login is Successful for user : " + testData.get("UserName") +
-		 * " ; Expecting login Error"); } }
-		 */
+
 
 	}
 

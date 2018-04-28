@@ -32,12 +32,12 @@ public class SearchPage {
 	private WebElement sel_DaysSince;
 	@FindBy(xpath = "//button[@id='submit']")
 	private WebElement btn_FindProperties;
-	//when no results found on search page
+	// when no results found on search page
 	@FindBy(xpath = "//div[@id='zeroResults' and @class='zeroResults']")
 	private WebElement txt_zeroResults;
+	@FindBy(xpath = "//h1[@id='headerTitle']")
+	private WebElement txt_HeaderTitle;
 
-	
-	
 	public SearchPage(WebDriver driver, ExtentTest testLog) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
@@ -189,9 +189,9 @@ public class SearchPage {
 		testLog.log(LogStatus.INFO, strPageName
 				+ "Verifying Property Type List is visible : ");
 		try {
-			
+
 			sel_PropertyType.isDisplayed();
-			
+
 			testLog.log(LogStatus.INFO, strPageName
 					+ " Property Type List is visible");
 		} catch (Exception e) {
@@ -203,6 +203,23 @@ public class SearchPage {
 		return true;
 
 	}
+
+	/*
+	 * public boolean verifySearchString(String strSearchString) {
+	 * testLog.log(LogStatus.INFO, strPageName + "Verifying Search String : ");
+	 * try {
+	 * 
+	 * sel_PropertyType.isDisplayed();
+	 * 
+	 * testLog.log(LogStatus.INFO, strPageName +
+	 * " Property Type List is visible"); } catch (Exception e) {
+	 * testLog.log(LogStatus.INFO, strPageName +
+	 * " Property Type List is not visible");
+	 * 
+	 * return false; } return true;
+	 * 
+	 * }
+	 */
 
 	public boolean is_elementDisplayed(WebElement webElement) {
 
@@ -217,11 +234,40 @@ public class SearchPage {
 
 	}
 
-	public String getErrorMessage()
-	{
+	public String getErrorMessage() {
 		String strErrMsg = "-1";
 		if (is_elementDisplayed(txt_zeroResults))
 			strErrMsg = txt_zeroResults.getText();
 		return strErrMsg;
+	}
+
+	public void verifyHeaderTitle(String strSearchLocation, String strSaleOrRent) {
+		
+		String strExpHeaderTitle = null;
+		
+		if (strSaleOrRent.equalsIgnoreCase("ForSale")) {
+			strExpHeaderTitle = "property for sale in " + strSearchLocation;
+		} else if (strSaleOrRent.equalsIgnoreCase("ToRent")) {
+			strExpHeaderTitle = "property to rent in " + strSearchLocation;
+		}
+		strExpHeaderTitle =strExpHeaderTitle.toLowerCase();
+		testLog.log(LogStatus.INFO, strPageName + "Verifying Header Title : ");
+		String strActHeaderTitle= txt_HeaderTitle.getText().trim().toLowerCase();
+
+		if (strActHeaderTitle.contains(strExpHeaderTitle)) {
+			testLog.log(
+					LogStatus.INFO,
+					strPageName
+							+ " Header Title contains expected title and is displayed as: "
+							+ txt_HeaderTitle.getText() + "; Expected :"
+							+ strExpHeaderTitle);
+		} else {
+			testLog.log(
+					LogStatus.ERROR,
+					strPageName
+							+ " Header Title not contains expected title and is displayed as: "
+							+ txt_HeaderTitle.getText() + "; Expected :"
+							+ strExpHeaderTitle);
+		}
 	}
 }

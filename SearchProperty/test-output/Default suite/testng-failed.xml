@@ -7,7 +7,7 @@
         <methods>
           <include name="aftermethod"/>
           <include name="afterTest"/>
-          <include name="logintest" invocation-numbers="1"/>
+          <include name="logintest" invocation-numbers="0 1 4 5"/>
         </methods>
       </class> <!-- com.rightmove.searchproperty.tests.SearchPropertyTest -->
     </classes>
