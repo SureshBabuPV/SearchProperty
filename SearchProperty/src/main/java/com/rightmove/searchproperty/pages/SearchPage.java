@@ -32,9 +32,12 @@ public class SearchPage {
 	private WebElement sel_DaysSince;
 	@FindBy(xpath = "//button[@id='submit']")
 	private WebElement btn_FindProperties;
+	//when no results found on search page
 	@FindBy(xpath = "//div[@id='zeroResults' and @class='zeroResults']")
 	private WebElement txt_zeroResults;
 
+	
+	
 	public SearchPage(WebDriver driver, ExtentTest testLog) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
@@ -173,13 +176,9 @@ public class SearchPage {
 		select_PropertyType(strPropertyType);
 		clickOn_btnFindProperties();
 		if (is_elementDisplayed(txt_zeroResults)) {
-			testLog.log(LogStatus.INFO, strPageName
-					+ " Sorry, no results found Displayed");
 			return false;
 		}
 		if (is_elementDisplayed(sel_Radius)) {
-			testLog.log(LogStatus.ERROR, strPageName
-					+ " Sorry, no results found Displayed");
 			return false;
 		}
 		return true;
@@ -190,7 +189,9 @@ public class SearchPage {
 		testLog.log(LogStatus.INFO, strPageName
 				+ "Verifying Property Type List is visible : ");
 		try {
+			
 			sel_PropertyType.isDisplayed();
+			
 			testLog.log(LogStatus.INFO, strPageName
 					+ " Property Type List is visible");
 		} catch (Exception e) {
@@ -214,5 +215,13 @@ public class SearchPage {
 			return false;
 		}
 
+	}
+
+	public String getErrorMessage()
+	{
+		String strErrMsg = "-1";
+		if (is_elementDisplayed(txt_zeroResults))
+			strErrMsg = txt_zeroResults.getText();
+		return strErrMsg;
 	}
 }

@@ -19,9 +19,11 @@ public class SearchResultsPage {
 
 	@FindAll(@FindBy(xpath = "//div[@class='propertyCard']"))
 	private List<WebElement> listWebEleSearchResults;
-	@FindBy(xpath = "//select[@id='sortType']")
-	private WebElement selSortType;
 
+	@FindAll(@FindBy(xpath = "//div[@class='l-searchResult is-list']/div"))
+	private List<WebElement> listSearchResults;
+	@FindBy(xpath = "//div[@class='l-searchResult is-list']")
+	private WebElement listSearchResult;
 	public SearchResultsPage(WebDriver driver, ExtentTest testLog) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
@@ -30,22 +32,26 @@ public class SearchResultsPage {
 
 	public String getNonFeaturedResult() {
 		String strAddress;
-		for (WebElement webEleSearchResult : listWebEleSearchResults) {
-			if (webEleSearchResult.getAttribute("class").equals("propertyCard")) {
-				strAddress = webEleSearchResult.findElement(
-						By.xpath("//div[@class='propertyCard-section']"))
+		for (WebElement webEleSearchResult : listSearchResults) {
+			if (!(webEleSearchResult.getAttribute("class").contains("featured")) ){
+			strAddress = webEleSearchResult.findElement(
+						By.xpath(".//div[@class='propertyCard-section']"))
 						.getText();
+				System.out.println(strAddress);
+			strAddress = webEleSearchResult.getText();
+				System.out.println(strAddress);
 				return strAddress;
 			}
 		}
 
 		return "-1";
 	}
+
 	public boolean is_SearchResultsPage() {
 		testLog.log(LogStatus.INFO, strPageName
 				+ "Verifying Search Results is visible : ");
 		try {
-			selSortType.isDisplayed();
+			listSearchResult.isDisplayed();
 			testLog.log(LogStatus.INFO, strPageName + " Search Results is visible");
 		} catch (Exception e) {
 			testLog.log(LogStatus.INFO, strPageName

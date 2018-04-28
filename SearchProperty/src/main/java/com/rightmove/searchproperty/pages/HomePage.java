@@ -21,6 +21,14 @@ public class HomePage {
 	private WebElement btn_ForSale;
 	@FindBy(xpath = "//button[@id='rent']")
 	private WebElement btn_ToRent;
+	//Button when no results found on home page
+	@FindBy(xpath = "//input[@id='search'])")
+	private WebElement btn_StartSearch;	
+	//Error Message when no results found on home page
+	@FindBy(xpath = "//div[@class='errorbox']")
+	private WebElement txt_ErrorMessage;
+			
+
 
 	public HomePage(WebDriver driver, ExtentTest testLog) {
 		PageFactory.initElements(driver, this);
@@ -71,5 +79,26 @@ public class HomePage {
 		}
 		return true;
 
+	}
+
+	public boolean is_elementDisplayed(WebElement webElement) {
+
+		try {
+			webElement.isDisplayed();
+			return true;
+
+		} catch (Exception e) {
+
+			return false;
+		}
+
+	}
+	
+	public String getErrorMessage()
+	{
+		String strErrMsg = "-1";
+		if (is_elementDisplayed(txt_ErrorMessage))
+			strErrMsg = txt_ErrorMessage.getText();
+		return strErrMsg;
 	}
 }

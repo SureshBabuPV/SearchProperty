@@ -49,18 +49,73 @@ public class SearchPropertyTest extends BaseTest {
 
 		homePage.searchPropertySaleOrRent(testData.get("SearchLocation"),
 				testData.get("SaleOrRent"));
-		if (searchPage.is_SearchPage()) {
-			searchPage.findProperty(testData.get("SearchRadius"),
-					testData.get("MinPrice"), testData.get("MaxPrice"),
-					testData.get("MinBedrooms"),
-					testData.get("MaxBedrooms"),
-					testData.get("DaysSince"),
-					testData.get("PropertyType"));
+		// when expecting home page location search results
+		if (testData.get("ExpHomeSearchResults").equalsIgnoreCase("Yes")) {
+			if (searchPage.is_SearchPage()) {
+				searchPage.findProperty(testData.get("SearchRadius"),
+						testData.get("MinPrice"), testData.get("MaxPrice"),
+						testData.get("MinBedrooms"),
+						testData.get("MaxBedrooms"), testData.get("DaysSince"),
+						testData.get("PropertyType"));
+				// when expecting property search results
+				if (testData.get("ExpSearchResults")
+						.equalsIgnoreCase("Yes")) {
+					if (searchResultsPage.is_SearchResultsPage()) {
+						testLog.log(
+								LogStatus.INFO,
+								"Details of non - featured Property: "
+										+ searchResultsPage
+												.getNonFeaturedResult());
+						testLog.log(
+								LogStatus.PASS,
+								"Propert search for non - featured Property successful. ");
+					} else {
+						testLog.log(LogStatus.ERROR,
+								"No results displayed after search error message : "
+										+ searchPage.getErrorMessage());
+						testLog.log(LogStatus.FAIL,
+								" Expecting Property search successfull but no results displayed.");
+					}
+			
+					}
+				else{
+					if (searchPage.getErrorMessage().equals("-1")) {
+						testLog.log(LogStatus.ERROR,
+								"Propert search error message not displayed");
+						testLog.log(LogStatus.FAIL,
+								" Expecting Propert search unsuccessfull but results displayed.");
+
+					} else {
+						testLog.log(LogStatus.INFO, "Propert search error message :"
+								+ searchPage.getErrorMessage());
+						testLog.log(LogStatus.PASS,
+								" Expecting Propert search unsuccessfull and no results displayed.");
+					}
+				}
+			} else {
+				testLog.log(LogStatus.ERROR, "*****Home Page error message :"
+						+ homePage.getErrorMessage());
+				testLog.log(LogStatus.FAIL,
+						" Expecting Home Page location search successfull but no results displayed.");
+			}
+
 		}
-		if(searchResultsPage.is_SearchResultsPage()){
-			System.out.println(searchResultsPage.getNonFeaturedResult());
+		// when expecting no home page location search results
+		else {
+			if (homePage.getErrorMessage().equals("-1")) {
+				testLog.log(LogStatus.ERROR,
+						"Home Page error message not displayed");
+				testLog.log(LogStatus.FAIL,
+						" Expecting Home Page location search unsuccessfull but results displayed.");
+
+			} else {
+				testLog.log(LogStatus.INFO, "Home Page error message :"
+						+ homePage.getErrorMessage());
+				testLog.log(LogStatus.PASS,
+						" Expecting Home Page location search unsuccessfull and no results displayed.");
+			}
 		}
-		
+
 		/*
 		 * loginpage .login_User(testData.get("UserName"),
 		 * testData.get("Password")); //Checking login is successful and it

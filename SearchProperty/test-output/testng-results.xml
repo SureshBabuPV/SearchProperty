@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42796" started-at="2018-04-27T22:46:45Z" finished-at="2018-04-27T22:47:28Z">
+  <suite name="Default suite" duration-ms="204621" started-at="2018-04-28T14:51:52Z" finished-at="2018-04-28T14:55:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42796" started-at="2018-04-27T22:46:45Z" finished-at="2018-04-27T22:47:28Z">
+    <test name="Default test" duration-ms="204621" started-at="2018-04-28T14:51:52Z" finished-at="2018-04-28T14:55:17Z">
       <class name="com.rightmove.searchproperty.tests.SearchPropertyTest">
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="41247" started-at="2018-04-27T23:46:46Z" data-provider="getData" finished-at="2018-04-27T23:47:27Z">
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="20464" started-at="2018-04-28T15:51:53Z" data-provider="getData" finished-at="2018-04-28T15:52:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{SaleOrRent=ForSale, ExpResults=, MinPrice=90,000, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}]]>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="970" started-at="2018-04-27T23:47:27Z" finished-at="2018-04-27T23:47:28Z">
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="969" started-at="2018-04-28T15:52:13Z" finished-at="2018-04-28T15:52:14Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,161 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-27T23:47:28Z" finished-at="2018-04-27T23:47:28Z">
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="30231" started-at="2018-04-28T15:52:14Z" data-provider="getData" finished-at="2018-04-28T15:52:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="767" started-at="2018-04-28T15:52:45Z" finished-at="2018-04-28T15:52:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="9703" started-at="2018-04-28T15:52:45Z" data-provider="getData" finished-at="2018-04-28T15:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="722" started-at="2018-04-28T15:52:55Z" finished-at="2018-04-28T15:52:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="39656" started-at="2018-04-28T15:52:56Z" data-provider="getData" finished-at="2018-04-28T15:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="735" started-at="2018-04-28T15:53:35Z" finished-at="2018-04-28T15:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="19719" started-at="2018-04-28T15:53:36Z" data-provider="getData" finished-at="2018-04-28T15:53:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="750" started-at="2018-04-28T15:53:56Z" finished-at="2018-04-28T15:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="29288" started-at="2018-04-28T15:53:57Z" data-provider="getData" finished-at="2018-04-28T15:54:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="734" started-at="2018-04-28T15:54:26Z" finished-at="2018-04-28T15:54:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="9754" started-at="2018-04-28T15:54:27Z" data-provider="getData" finished-at="2018-04-28T15:54:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="700" started-at="2018-04-28T15:54:36Z" finished-at="2018-04-28T15:54:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="39036" started-at="2018-04-28T15:54:37Z" data-provider="getData" finished-at="2018-04-28T15:55:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="750" started-at="2018-04-28T15:55:16Z" finished-at="2018-04-28T15:55:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-28T15:55:17Z" finished-at="2018-04-28T15:55:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
