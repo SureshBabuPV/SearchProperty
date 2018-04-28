@@ -2,7 +2,6 @@ package com.rightmove.searchproperty.pages;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -55,11 +54,13 @@ public class SearchResultsPage {
 	public String getNonFeaturedResult() {
 		String strAddress;
 		for (WebElement webEleSearchResult : listSearchResults) {
-			//System.out.println(webEleSearchResult.getAttribute("class").contains("featured"));
+			// System.out.println(webEleSearchResult.getAttribute("class").contains("featured"));
 			if (!(webEleSearchResult.getAttribute("class").contains("featured"))) {
-/*				strAddress = webEleSearchResult.findElement(
-						By.xpath(".//div[@class='propertyCard-section']"))
-						.getText();*/
+				/*
+				 * strAddress = webEleSearchResult.findElement(
+				 * By.xpath(".//div[@class='propertyCard-section']"))
+				 * .getText();
+				 */
 				strAddress = webEleSearchResult.getText();
 				System.out.println(strAddress);
 				return strAddress;
@@ -88,18 +89,19 @@ public class SearchResultsPage {
 
 	public void verifySearchTitle(String strSearchLocation, String strSaleOrRent) {
 		String strExpSearchTitle = null;
-		
+
 		if (strSaleOrRent.equalsIgnoreCase("ForSale")) {
 			strExpSearchTitle = "Properties For Sale in " + strSearchLocation;
 		} else if (strSaleOrRent.equalsIgnoreCase("ToRent")) {
 			strExpSearchTitle = "Properties To Rent in " + strSearchLocation;
 		}
-		strExpSearchTitle =strExpSearchTitle.toLowerCase();
+		strExpSearchTitle = strExpSearchTitle.toLowerCase();
 		testLog.log(LogStatus.INFO, strPageName + "Verifying Search Title : ");
-		String strActHeaderTitle= txt_SearchTitle.getText().trim().toLowerCase();
+		String strActHeaderTitle = txt_SearchTitle.getText().trim()
+				.toLowerCase();
 
 		if (strActHeaderTitle.contains(strExpSearchTitle)) {
-		
+
 			testLog.log(
 					LogStatus.INFO,
 					strPageName

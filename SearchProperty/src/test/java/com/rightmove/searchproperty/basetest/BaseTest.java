@@ -6,7 +6,10 @@ import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.apache.commons.io.FileUtils;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -74,7 +77,12 @@ public class BaseTest {
 			dataHashTable[i - 2][0] = tempHashTable;
 		}
 	}
-
+	
+/*	public  void takeScreenShot(String fileName) throws IOException{
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	    FileUtils.copyFile(scrFile, new File(config_prop.getProperty("screenShotsPath")+"\\"+fileName+".jpg"));	   
+		//testLog.log(logStatus,testLog.addScreenCapture(imagePath) );
+	}*/
 	public void openBrowser() throws Exception {
 		
 		//To open browser currently implemented only chrome.

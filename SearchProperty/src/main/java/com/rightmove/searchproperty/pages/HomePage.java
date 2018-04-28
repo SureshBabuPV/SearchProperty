@@ -50,6 +50,7 @@ public class HomePage {
 	public void clickOn_ToRent() {
 		btn_ToRent.click();
 		testLog.log(LogStatus.INFO, strPageName + "Clicked on ToRent ");
+
 	}
 
 	public void searchPropertySaleOrRent(String strSearchLocation, String strSaleOrRent) {
