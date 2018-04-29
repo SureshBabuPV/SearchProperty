@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/10</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 28 23:03:12 BST 2018</td>
+<td>Started on:</td><td>Sun Apr 29 23:27:29 BST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>285 seconds (285752 ms)</td>
+<tr><td>Total time:</td><td>168 seconds (168559 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,76 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.afterTest()'><b>afterTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+ Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.,  Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.afterTest(SearchPropertyTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1462661081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1462661081'><pre>java.lang.AssertionError: The following asserts failed:
+ Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.,  Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.afterTest(SearchPropertyTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,75 +145,623 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}</td>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}</td>
 <td></td>
-<td>20</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
+<td>66</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
 <tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
-<td></td>
-<td>30</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}</td>
-<td></td>
-<td>9</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
-<td></td>
-<td>39</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
-<td></td>
-<td>19</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
-<td></td>
-<td>30</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
-<td></td>
-<td>9</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
-<td></td>
-<td>39</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}</td>
-<td></td>
-<td>16</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}</td>
-<td></td>
-<td>5</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}</td>
-<td></td>
-<td>16</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=1,100 PCM}</td>
-<td></td>
-<td>15</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
-<tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=}</td>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}</td>
 <td></td>
 <td>6</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
 <tr>
-<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.logintest()'><b>logintest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}</td>
 <td></td>
-<td>16</td>
-<td>com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2</td></tr>
+<td>32</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=1,100 PCM}</td>
+<td></td>
+<td>21</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=}</td>
+<td></td>
+<td>6</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
+<td></td>
+<td>21</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace172215878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172215878'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2092885124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2092885124'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1004430079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004430079'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace697460450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace697460450'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace938405008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938405008'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace745627268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745627268'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace95322593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95322593'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1416665097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416665097'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=London, MaxPrice=100,000}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1220806149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1220806149'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
+<tr>
+<td title='com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest()'><b>searchPropertyTest</b><br>Test class: com.rightmove.searchproperty.tests.SearchPropertyTest<br>Parameters: {ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=London, MaxPrice=}</td>
+<td><div><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791408866'><pre>org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e</td></tr>
 </table><p>
 </body>
 </html>

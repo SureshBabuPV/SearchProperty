@@ -32,13 +32,13 @@ public class BaseTest {
 	public ITestResult result;
 	public String strTestName;
 
-/*	@BeforeTest
-	public void startUpTest() throws Exception {
-
-		getConfigProperties(); // Initialising Configuration properties
-		readTestDatFromXLS(); // Initialising Test Case Data using xls
-		softAssertion = new SoftAssert();
-	}*/
+	/*
+	 * @BeforeTest public void startUpTest() throws Exception {
+	 * 
+	 * getConfigProperties(); // Initialising Configuration properties
+	 * readTestDatFromXLS(); // Initialising Test Case Data using xls
+	 * softAssertion = new SoftAssert(); }
+	 */
 
 	public void getConfigProperties() throws IOException {
 		// Reading Property files
@@ -62,11 +62,11 @@ public class BaseTest {
 		test_data = new Xls_Reader(System.getProperty("user.dir")
 				+ config_prop.getProperty("testdat_path") + "\\"
 				+ testcase_name + ".xlsx");
-		
-		//Getting number of rows and column
+
+		// Getting number of rows and column
 		colcount = test_data.getColumnCount("Data");
 		rowcount = test_data.getRowCount("Data");
-		//creating two dim object array each row contains Hashtable
+		// creating two dim object array each row contains Hashtable
 		dataHashTable = new Object[rowcount - 1][1];
 		for (i = 2; i <= rowcount; i++) {
 			Hashtable<String, String> tempHashTable = new Hashtable<String, String>();
@@ -77,15 +77,17 @@ public class BaseTest {
 			dataHashTable[i - 2][0] = tempHashTable;
 		}
 	}
-	
-/*	public  void takeScreenShot(String fileName) throws IOException{
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	    FileUtils.copyFile(scrFile, new File(config_prop.getProperty("screenShotsPath")+"\\"+fileName+".jpg"));	   
-		//testLog.log(logStatus,testLog.addScreenCapture(imagePath) );
-	}*/
+
+	/*
+	 * public void takeScreenShot(String fileName) throws IOException{ File
+	 * scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	 * FileUtils.copyFile(scrFile, new
+	 * File(config_prop.getProperty("screenShotsPath")+"\\"+fileName+".jpg"));
+	 * //testLog.log(logStatus,testLog.addScreenCapture(imagePath) ); }
+	 */
 	public void openBrowser() throws Exception {
-		
-		//To open browser currently implemented only chrome.
+
+		// To open browser currently implemented only chrome.
 		if (config_prop.getProperty("browser").equals("chrome")) {
 			System.setProperty(
 					"webdriver.chrome.driver",

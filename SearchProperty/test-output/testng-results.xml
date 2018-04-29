@@ -1,321 +1,630 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="14" passed="14">
+<testng-results skipped="10" failed="0" total="16" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="285752" started-at="2018-04-28T22:03:12Z" finished-at="2018-04-28T22:07:58Z">
+  <suite name="Default suite" duration-ms="168559" started-at="2018-04-29T22:27:29Z" finished-at="2018-04-29T22:30:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="285752" started-at="2018-04-28T22:03:12Z" finished-at="2018-04-28T22:07:58Z">
+    <test name="Default test" duration-ms="168559" started-at="2018-04-29T22:27:29Z" finished-at="2018-04-29T22:30:18Z">
       <class name="com.rightmove.searchproperty.tests.SearchPropertyTest">
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="20279" started-at="2018-04-28T23:03:13Z" data-provider="getData" finished-at="2018-04-28T23:03:33Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="16" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="1000" started-at="2018-04-28T23:03:33Z" finished-at="2018-04-28T23:03:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="30698" started-at="2018-04-28T23:03:34Z" data-provider="getData" finished-at="2018-04-28T23:04:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="757" started-at="2018-04-28T23:04:05Z" finished-at="2018-04-28T23:04:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="9546" started-at="2018-04-28T23:04:06Z" data-provider="getData" finished-at="2018-04-28T23:04:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="703" started-at="2018-04-28T23:04:15Z" finished-at="2018-04-28T23:04:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="338" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="39488" started-at="2018-04-28T23:04:16Z" data-provider="getData" finished-at="2018-04-28T23:04:55Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="2" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="749" started-at="2018-04-28T23:04:55Z" finished-at="2018-04-28T23:04:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="19232" started-at="2018-04-28T23:04:56Z" data-provider="getData" finished-at="2018-04-28T23:05:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="734" started-at="2018-04-28T23:05:15Z" finished-at="2018-04-28T23:05:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="30001" started-at="2018-04-28T23:05:16Z" data-provider="getData" finished-at="2018-04-28T23:05:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="758" started-at="2018-04-28T23:05:46Z" finished-at="2018-04-28T23:05:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="69" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="9305" started-at="2018-04-28T23:05:47Z" data-provider="getData" finished-at="2018-04-28T23:05:56Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="3" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=100,000}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="796" started-at="2018-04-28T23:05:56Z" finished-at="2018-04-28T23:05:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="39295" started-at="2018-04-28T23:05:57Z" data-provider="getData" finished-at="2018-04-28T23:06:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="750" started-at="2018-04-28T23:06:36Z" finished-at="2018-04-28T23:06:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="16104" started-at="2018-04-28T23:06:37Z" data-provider="getData" finished-at="2018-04-28T23:06:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="703" started-at="2018-04-28T23:06:53Z" finished-at="2018-04-28T23:06:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="52" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="5983" started-at="2018-04-28T23:06:54Z" data-provider="getData" finished-at="2018-04-28T23:07:00Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="3" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}]]>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="679" started-at="2018-04-28T23:07:00Z" finished-at="2018-04-28T23:07:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="16108" started-at="2018-04-28T23:07:01Z" data-provider="getData" finished-at="2018-04-28T23:07:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="701" started-at="2018-04-28T23:07:17Z" finished-at="2018-04-28T23:07:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="15916" started-at="2018-04-28T23:07:17Z" data-provider="getData" finished-at="2018-04-28T23:07:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=1,100 PCM}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="703" started-at="2018-04-28T23:07:33Z" finished-at="2018-04-28T23:07:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="45" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="6057" started-at="2018-04-28T23:07:34Z" data-provider="getData" finished-at="2018-04-28T23:07:40Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="2" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=xyz, MaxPrice=}]]>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="734" started-at="2018-04-28T23:07:40Z" finished-at="2018-04-28T23:07:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="51" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="logintest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="logintest" duration-ms="16515" started-at="2018-04-28T23:07:41Z" data-provider="getData" finished-at="2018-04-28T23:07:57Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="3" started-at="2018-04-29T23:27:38Z" data-provider="getData" finished-at="2018-04-29T23:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="aftermethod(java.lang.reflect.Method)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="aftermethod" is-config="true" duration-ms="806" started-at="2018-04-28T23:07:57Z" finished-at="2018-04-28T23:07:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.rightmove.searchproperty.tests.SearchPropertyTest.logintest(java.util.Hashtable) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="38" started-at="2018-04-29T23:27:38Z" finished-at="2018-04-29T23:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@184f6be2]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-28T23:07:58Z" finished-at="2018-04-28T23:07:58Z">
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="2" started-at="2018-04-29T23:27:39Z" data-provider="getData" finished-at="2018-04-29T23:27:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="42" started-at="2018-04-29T23:27:39Z" finished-at="2018-04-29T23:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="2" started-at="2018-04-29T23:27:39Z" data-provider="getData" finished-at="2018-04-29T23:27:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=No, SaleOrRent=ToRent, SortBy=Lowest Price, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="34" started-at="2018-04-29T23:27:39Z" finished-at="2018-04-29T23:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="2" started-at="2018-04-29T23:27:39Z" data-provider="getData" finished-at="2018-04-29T23:27:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=London, MaxPrice=100,000}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="32" started-at="2018-04-29T23:27:39Z" finished-at="2018-04-29T23:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="SKIP" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="3" started-at="2018-04-29T23:27:39Z" data-provider="getData" finished-at="2018-04-29T23:27:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=Yes, SaleOrRent=ForSale, SortBy=Newest Listed, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=, MinBedrooms=, SearchRadius=Within ¼ mile, SkipTest=Yes, PropertyType=, SearchLocation=London, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: message
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.searchPropertyTest(SearchPropertyTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="34" started-at="2018-04-29T23:27:39Z" finished-at="2018-04-29T23:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="66374" started-at="2018-04-29T23:27:39Z" data-provider="getData" finished-at="2018-04-29T23:28:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="754" started-at="2018-04-29T23:28:45Z" finished-at="2018-04-29T23:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="6535" started-at="2018-04-29T23:28:46Z" data-provider="getData" finished-at="2018-04-29T23:28:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=80,000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="724" started-at="2018-04-29T23:28:52Z" finished-at="2018-04-29T23:28:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="32968" started-at="2018-04-29T23:28:53Z" data-provider="getData" finished-at="2018-04-29T23:29:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ForSale, SortBy=, MinPrice=90,000, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=80,000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="795" started-at="2018-04-29T23:29:26Z" finished-at="2018-04-29T23:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="21355" started-at="2018-04-29T23:29:27Z" data-provider="getData" finished-at="2018-04-29T23:29:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=Yes, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=1,100 PCM}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="816" started-at="2018-04-29T23:29:48Z" finished-at="2018-04-29T23:29:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="6083" started-at="2018-04-29T23:29:49Z" data-provider="getData" finished-at="2018-04-29T23:29:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=xyz, MaxPrice=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="694" started-at="2018-04-29T23:29:55Z" finished-at="2018-04-29T23:29:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="searchPropertyTest(java.util.Hashtable)[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="searchPropertyTest" duration-ms="21069" started-at="2018-04-29T23:29:56Z" data-provider="getData" finished-at="2018-04-29T23:30:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpSearchResults=, SaleOrRent=ToRent, SortBy=, MinPrice=1,000 PCM, ExpHomeSearchResults=No, DaysSince=, MaxBedrooms=4, MinBedrooms=3, SearchRadius=Within ¼ mile, SkipTest=No, PropertyType=, SearchLocation=CR0 5UX, MaxPrice=1,100 PCM}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPropertyTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="aftermethod" is-config="true" duration-ms="747" started-at="2018-04-29T23:30:17Z" finished-at="2018-04-29T23:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.rightmove.searchproperty.tests.SearchPropertyTest@192c3f1e]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-29T23:30:18Z" finished-at="2018-04-29T23:30:18Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+ Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.,  Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+ Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.,  Expecting Home Page location search successfull but no results displayed.,  Expecting Home Page location search unsuccessfull but results displayed.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.rightmove.searchproperty.tests.SearchPropertyTest.afterTest(SearchPropertyTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
