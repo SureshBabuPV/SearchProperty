@@ -71,7 +71,7 @@ public class SearchPage {
 			return true;
 		} catch (Exception e) {
 			testLog.log(LogStatus.ERROR, strPageName
-					+ "Could not Select Radius as :" + strMinPrice);
+					+ "Could not Select MinPrice as :" + strMinPrice);
 			return false;
 		}
 	}
