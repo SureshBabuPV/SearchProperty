@@ -17,6 +17,8 @@ public class HomePage {
 	// Declaring all web elements in login page
 	@FindBy(xpath = "//input[@id='searchLocation']")
 	private WebElement txtbx_SearchLocation;
+	@FindBy(xpath = "//input[@id='searchLocation']")
+	private WebElement txtbx_SearchLocationtest;
 	@FindBy(xpath = "//button[@id='buy']")
 	private WebElement btn_ForSale;
 	@FindBy(xpath = "//button[@id='rent']")
