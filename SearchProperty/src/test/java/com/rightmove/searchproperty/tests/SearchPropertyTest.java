@@ -25,6 +25,7 @@ public class SearchPropertyTest extends BaseTest {
 	HomePage homePage;
 	SearchPage searchPage;
 	SearchResultsPage searchResultsPage;
+	//This comment added by Suresh Branch1
 
 	@Test(testName = "SearchPropertyTest", dataProvider = "getData")
 	public void searchPropertyTest(Hashtable<String, String> testData) throws Exception {
