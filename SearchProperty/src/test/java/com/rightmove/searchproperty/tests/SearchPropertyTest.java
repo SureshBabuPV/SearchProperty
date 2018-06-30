@@ -29,7 +29,7 @@ public class SearchPropertyTest extends BaseTest {
 
 	@Test(testName = "SearchPropertyTest", dataProvider = "getData")
 	public void searchPropertyTest(Hashtable<String, String> testData) throws Exception {
-
+		String Test;
 		// Starting Test for reports
 		strTestName = "SearchProperty";
 		testLog = extReport.startTest(strTestName);
