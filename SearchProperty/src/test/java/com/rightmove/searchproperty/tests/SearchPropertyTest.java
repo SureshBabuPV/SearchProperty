@@ -26,10 +26,12 @@ public class SearchPropertyTest extends BaseTest {
 	SearchPage searchPage;
 	SearchResultsPage searchResultsPage;
 	//This comment added by Suresh Branch1
+	//This comment added by Suresh Branch2
 
 	@Test(testName = "SearchPropertyTest", dataProvider = "getData")
 	public void searchPropertyTest(Hashtable<String, String> testData) throws Exception {
 		String Test;
+		String suresh1branch2;
 		// Starting Test for reports
 		strTestName = "SearchProperty";
 		testLog = extReport.startTest(strTestName);
